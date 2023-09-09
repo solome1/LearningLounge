@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input  name="display" id="inputext" placeholder="0">
+            </div>
+            <div>
+                <button onclick="clearDisplay()" class="operator">AC</button>
+                <button onclick="deleteLastChar()" class="operator">DE</button>
+                <button onclick="calculate('%')" class="operator">%</button>
+                <button onclick="calculate('/')" class="operator">/</button>
+            </div>
+            <div >
+                <button onclick="calculate('7')">7</button>
+                <button onclick="calculate('8')">8</button>
+                <button onclick="calculate('9')">9</button>
+                <button  onclick="calculate('*')" class="operator">*</button>
+            </div>
+            <div >
+                <button onclick="calculate('4')">4</button>
+                <button onclick="calculate('5')">5</button>
+                <button onclick="calculate('6')">6</button>
+                <button onclick="calculate('-')"  class="operator">-</button>
+            </div>
+            <div >
+                <button onclick="calculate('1')">1</button> 
+                <button onclick="calculate('2')">2</button>
+                <button onclick="calculate('3')">3</button>
+                <button onclick="calculate('+')" class="operator">+</button>
+            </div>
+            <div >
+                <button onclick="calculate('00')">00</button>
+                <button onclick="calculate('0')">0</button>
+                <button onclick="calculate('.')">.</button>
+                <button onclick="calculateResult()"  class="operator">=</button>
+            </div>  
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
